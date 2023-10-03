@@ -11,6 +11,7 @@
 		9455EAEC2ACCC0D900FCCED1 /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EAEB2ACCC0D900FCCED1 /* EssentialFeedTests.swift */; };
 		9455EAEE2ACCC0D900FCCED1 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 9455EAE02ACCC0D500FCCED1 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9455EAFA2ACCC10A00FCCED1 /* EssentialFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EAF92ACCC10A00FCCED1 /* EssentialFeedItem.swift */; };
+		9455EAFE2ACCC1F100FCCED1 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EAFD2ACCC1F100FCCED1 /* FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		9455EAEB2ACCC0D900FCCED1 /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		9455EAED2ACCC0D900FCCED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9455EAF92ACCC10A00FCCED1 /* EssentialFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedItem.swift; sourceTree = "<group>"; };
+		9455EAFD2ACCC1F100FCCED1 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				9455EAE02ACCC0D500FCCED1 /* EssentialFeed.h */,
 				9455EAE12ACCC0D500FCCED1 /* Info.plist */,
 				9455EAF92ACCC10A00FCCED1 /* EssentialFeedItem.swift */,
+				9455EAFD2ACCC1F100FCCED1 /* FeedLoader.swift */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9455EAFE2ACCC1F100FCCED1 /* FeedLoader.swift in Sources */,
 				9455EAFA2ACCC10A00FCCED1 /* EssentialFeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
