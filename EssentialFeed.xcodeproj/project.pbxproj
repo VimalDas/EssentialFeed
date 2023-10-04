@@ -14,6 +14,7 @@
 		9455EAFE2ACCC1F100FCCED1 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EAFD2ACCC1F100FCCED1 /* FeedLoader.swift */; };
 		9455EB0A2ACCD00A00FCCED1 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EB092ACCD00A00FCCED1 /* RemoteFeedLoader.swift */; };
 		9455EB102ACDCC6300FCCED1 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EB0F2ACDCC6300FCCED1 /* HTTPClient.swift */; };
+		9455EB142ACDCCB600FCCED1 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EB132ACDCCB600FCCED1 /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		9455EAFD2ACCC1F100FCCED1 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		9455EB092ACCD00A00FCCED1 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		9455EB0F2ACDCC6300FCCED1 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		9455EB132ACDCCB600FCCED1 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				9455EB092ACCD00A00FCCED1 /* RemoteFeedLoader.swift */,
+				9455EB132ACDCCB600FCCED1 /* FeedItemsMapper.swift */,
 				9455EB0F2ACDCC6300FCCED1 /* HTTPClient.swift */,
 			);
 			path = FeedApi;
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9455EB142ACDCCB600FCCED1 /* FeedItemsMapper.swift in Sources */,
 				9455EAFE2ACCC1F100FCCED1 /* FeedLoader.swift in Sources */,
 				9455EB0A2ACCD00A00FCCED1 /* RemoteFeedLoader.swift in Sources */,
 				9455EB102ACDCC6300FCCED1 /* HTTPClient.swift in Sources */,
