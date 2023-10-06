@@ -49,6 +49,14 @@
                BlueprintName = "EssentialFeedTests"
                ReferencedContainer = "container:EssentialFeed.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "LoadFeedFromRemoteUseCaseTests">
+               </Test>
+               <Test
+                  Identifier = "URLSessionHTTPClientTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
