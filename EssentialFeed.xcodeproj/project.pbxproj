@@ -25,6 +25,7 @@
 		94BF363B2AD1512D0075430C /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF363A2AD1512D0075430C /* FeedStore.swift */; };
 		94BF36402AD16FC60075430C /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF363F2AD16FC60075430C /* RemoteFeedItem.swift */; };
 		94BF36452AD1700F0075430C /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF36442AD1700F0075430C /* LocalFeedImage.swift */; };
+		94BF36502AD174DC0075430C /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF364F2AD174DC0075430C /* LoadFeedFromCacheUseCaseTests.swift */; };
 		94D579BE2AD0B79000D4DA02 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D579BD2AD0B79000D4DA02 /* CacheFeedUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		94BF363A2AD1512D0075430C /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		94BF363F2AD16FC60075430C /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		94BF36442AD1700F0075430C /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
+		94BF364F2AD174DC0075430C /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		94D579BD2AD0B79000D4DA02 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				94D579BD2AD0B79000D4DA02 /* CacheFeedUseCaseTests.swift */,
+				94BF364F2AD174DC0075430C /* LoadFeedFromCacheUseCaseTests.swift */,
 			);
 			path = FeedCache;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				9455EAEC2ACCC0D900FCCED1 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				9455EB1B2ACEC0B900FCCED1 /* URLSessionHTTPClientTests.swift in Sources */,
 				94D579BE2AD0B79000D4DA02 /* CacheFeedUseCaseTests.swift in Sources */,
+				94BF36502AD174DC0075430C /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				940E33132ACEEC2C00B15A6E /* XCTTestCase+MemoryLeakTrackingHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

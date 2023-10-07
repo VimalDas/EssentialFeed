@@ -9,7 +9,7 @@ import XCTest
 import EssentialFeed
 
 class CacheFeedUseCaseTests: XCTestCase {
-    func test_doesNotMessageStoreUponDeletion() {
+    func test_init_doesNotMessageStoreUponCreation() {
         let (_, store) = makeSUT()
         
         XCTAssertEqual(store.receivedMessages, [])
