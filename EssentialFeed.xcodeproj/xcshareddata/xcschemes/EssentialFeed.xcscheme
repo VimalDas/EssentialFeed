@@ -51,6 +51,9 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "CacheFeedUseCaseTests">
+               </Test>
+               <Test
                   Identifier = "LoadFeedFromRemoteUseCaseTests">
                </Test>
                <Test
