@@ -109,12 +109,12 @@ class CacheFeedUseCaseTests: XCTestCase {
         return (sut, store)
     }
     
-    private func uniqueItems() -> (models: [FeedItem], local: [LocalFeedItem]) {
+    private func uniqueItems() -> (models: [FeedImage], local: [LocalFeedImage]) {
         let models = [uniqueItem(), uniqueItem()]
-        let local = models.map { LocalFeedItem(id: $0.id,
+        let local = models.map { LocalFeedImage(id: $0.id,
                                                    description: $0.description,
                                                    location: $0.location,
-                                                   imageURL: $0.imageURL) }
+                                                   url: $0.imageURL) }
         return (models, local)
     }
     
@@ -141,7 +141,7 @@ class CacheFeedUseCaseTests: XCTestCase {
         
         enum ReceivedMessages: Equatable {
             case deleteCacheFeed
-            case insert([LocalFeedItem], Date)
+            case insert([LocalFeedImage], Date)
         }
         
         private (set) var receivedMessages = [ReceivedMessages]()
@@ -163,7 +163,7 @@ class CacheFeedUseCaseTests: XCTestCase {
             insertionCompletions[index](nil)
         }
         
-        func insert(_ items: [LocalFeedItem], timestamp: Date, completion: @escaping InsertionCompletions) {
+        func insert(_ items: [LocalFeedImage], timestamp: Date, completion: @escaping InsertionCompletions) {
             insertionCompletions.append(completion)
             receivedMessages.append(.insert(items, timestamp))
         }
@@ -174,8 +174,8 @@ class CacheFeedUseCaseTests: XCTestCase {
     }
 
     
-    private func uniqueItem() -> FeedItem {
-        FeedItem(id: UUID(), description: "any", location: "any", imageURL: anyURL())
+    private func uniqueItem() -> FeedImage {
+        FeedImage(id: UUID(), description: "any", location: "any", imageURL: anyURL())
     }
     
     private func anyURL() -> URL {
