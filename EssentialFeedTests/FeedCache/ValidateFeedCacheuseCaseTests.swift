@@ -8,11 +8,20 @@
 import XCTest
 import EssentialFeed
 
-class ValidateFeedCacheuseCaseTests: XCTestCase {
+class ValidateFeedCacheUseCaseTests: XCTestCase {
     func test_init_doesNotMessageStoreUponCreation() {
         let (_, store) = makeSUT()
         
         XCTAssertEqual(store.receivedMessages, [])
+    }
+
+    func test_load_hasNoSideEffectsOnRetrievalError() {
+        let (sut, store) = makeSUT()
+        sut.validateCache()
+        
+        store.completeRetrieval(with: anyNSError())
+        
+        XCTAssertEqual(store.receivedMessages, [.retrieve, .deleteCacheFeed])
     }
 
     //MARK: - Helpers
@@ -40,5 +49,9 @@ class ValidateFeedCacheuseCaseTests: XCTestCase {
 
     private func anyURL() -> URL {
         URL(string: "https://any-url.com")!
+    }
+    
+    private func anyNSError() -> NSError {
+        NSError(domain: "any error", code: 0)
     }
 }

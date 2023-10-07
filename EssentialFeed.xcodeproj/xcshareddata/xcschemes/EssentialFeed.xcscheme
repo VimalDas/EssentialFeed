@@ -54,9 +54,6 @@
                   Identifier = "CacheFeedUseCaseTests">
                </Test>
                <Test
-                  Identifier = "LoadFeedFromCacheUseCaseTests">
-               </Test>
-               <Test
                   Identifier = "LoadFeedFromRemoteUseCaseTests">
                </Test>
                <Test
