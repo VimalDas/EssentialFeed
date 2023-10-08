@@ -31,6 +31,7 @@
 		94BF36622AD1EF8D0075430C /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF36612AD1EF8D0075430C /* FeedCacheTestHelpers.swift */; };
 		94BF36672AD1F0E70075430C /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF36662AD1F0E70075430C /* SharedTestHelpers.swift */; };
 		94BF366C2AD1FBD20075430C /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF366B2AD1FBD20075430C /* FeedCachePolicy.swift */; };
+		94BF36712AD275280075430C /* CodableFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF36702AD275280075430C /* CodableFeedStoreTests.swift */; };
 		94D579BE2AD0B79000D4DA02 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D579BD2AD0B79000D4DA02 /* CacheFeedUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		94BF36612AD1EF8D0075430C /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		94BF36662AD1F0E70075430C /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		94BF366B2AD1FBD20075430C /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
+		94BF36702AD275280075430C /* CodableFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStoreTests.swift; sourceTree = "<group>"; };
 		94D579BD2AD0B79000D4DA02 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +221,7 @@
 				94D579BD2AD0B79000D4DA02 /* CacheFeedUseCaseTests.swift */,
 				94BF364F2AD174DC0075430C /* LoadFeedFromCacheUseCaseTests.swift */,
 				94BF36592AD1E9750075430C /* ValidateFeedCacheUseCaseTests.swift */,
+				94BF36702AD275280075430C /* CodableFeedStoreTests.swift */,
 			);
 			path = FeedCache;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BF36712AD275280075430C /* CodableFeedStoreTests.swift in Sources */,
 				94BF36622AD1EF8D0075430C /* FeedCacheTestHelpers.swift in Sources */,
 				9455EAEC2ACCC0D900FCCED1 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				9455EB1B2ACEC0B900FCCED1 /* URLSessionHTTPClientTests.swift in Sources */,
