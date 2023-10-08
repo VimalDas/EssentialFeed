@@ -200,7 +200,6 @@
 			children = (
 				9455EB092ACCD00A00FCCED1 /* RemoteFeedLoader.swift */,
 				9455EB132ACDCCB600FCCED1 /* FeedItemsMapper.swift */,
-				94BF36782AD2A7210075430C /* CodableFeedStore.swift */,
 				9455EB0F2ACDCC6300FCCED1 /* HTTPClient.swift */,
 				940E33182ACF009100B15A6E /* URLSessionHTTPClient.swift */,
 				94BF363F2AD16FC60075430C /* RemoteFeedItem.swift */,
@@ -223,6 +222,7 @@
 				94BF36352AD1509E0075430C /* LocalFeedLoader.swift */,
 				94BF363A2AD1512D0075430C /* FeedStore.swift */,
 				94BF36442AD1700F0075430C /* LocalFeedImage.swift */,
+				94BF36782AD2A7210075430C /* CodableFeedStore.swift */,
 				94BF366B2AD1FBD20075430C /* FeedCachePolicy.swift */,
 			);
 			path = FeedCache;
