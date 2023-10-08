@@ -88,6 +88,16 @@ class CodableFeedStoreTests: XCTestCase {
         XCTAssertNotNil(firstInsertionError, "Expected cache inserion to fail with an error")
     }
     
+    func test_delete_deliversErrorOnDeletionError() {
+        let noDeletePermissionURL = cachesDirectory()
+        let sut = makeSUT(storeURL: noDeletePermissionURL)
+        
+        let deletionError = deleteCache(from: sut)
+        
+        XCTAssertNotNil(deletionError, "Expected cache deletion to fail")
+        expect(sut, toRetrieve: .empty)
+    }
+    
     //MARK: - Helpers
     
     private func expect(_ sut: FeedStore, toRetrieveTwice expectedResult: RetrieveCacheFeedResult, file: StaticString = #file, line: UInt = #line) {
@@ -130,6 +140,17 @@ class CodableFeedStoreTests: XCTestCase {
         return insertionError
     }
     
+    private func deleteCache(from sut: FeedStore) -> Error? {
+        let exp = expectation(description: "Wait for cache deletion")
+        var deletionError: Error?
+        sut.deleteCachedFeed { receivedDeletionError in
+            deletionError = receivedDeletionError
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 1.0)
+        return deletionError
+    }
+
     private func makeSUT(storeURL: URL? = nil, file: StaticString = #filePath, line: UInt = #line) -> FeedStore {
         let sut = CodableFeedStore(storeURL: storeURL ?? testSpecificStoreURL())
         trackForMemoryLeaks(sut, file: file, line: line)
@@ -137,9 +158,13 @@ class CodableFeedStoreTests: XCTestCase {
     }
     
     private func testSpecificStoreURL() -> URL {
-        return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("\(type(of: self)).store")
-    }
-    
+        return cachesDirectory().appendingPathComponent("\(type(of: self)).store")
+     }
+
+     private func cachesDirectory() -> URL {
+         return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
+     }
+
     private func setupEmptySToreState() {
         deleteStoreArtifacts()
     }
