@@ -147,13 +147,9 @@
 		940E33112ACEEBFC00B15A6E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				94A8FE722AD5C73100041D51 /* NSEntityDescription+Assertions.swift */,
-				94A8FE682AD5C6A300041D51 /* NSManagedObjectContext+Helpers.swift */,
-				94A8FE542AD5C57000041D51 /* NSManagedObjectContext+Stub.swift */,
-				940E33122ACEEC2C00B15A6E /* XCTTestCase+MemoryLeakTrackingHelper.swift */,
-				94BF36542AD176C40075430C /* FeedStoreSpy.swift */,
-				94BF36612AD1EF8D0075430C /* FeedCacheTestHelpers.swift */,
-				94BF36662AD1F0E70075430C /* SharedTestHelpers.swift */,
+				94A8FE992AD5D5F700041D51 /* CoreDataTestHelpers */,
+				94A8FE9B2AD5D61D00041D51 /* SharedHelpers */,
+				94A8FE9A2AD5D60800041D51 /* CacheTestHelpers */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -191,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				94A8FE622AD5C5C200041D51 /* CoreData */,
-				94A8FE5C2AD5C5A500041D51 /* Helpers */,
 				94BF36342AD150810075430C /* FeedCache */,
 				9455EB082ACCCFE800FCCED1 /* FeedApi */,
 				9455EAE02ACCC0D500FCCED1 /* EssentialFeed.h */,
@@ -204,8 +199,7 @@
 		9455EAEA2ACCC0D900FCCED1 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				94A8FE432AD5C38B00041D51 /* FeedStoreChallengeTests.swift */,
-				94A8FE422AD5C38B00041D51 /* FeedStoreIntegrationTests.swift */,
+				94A8FE932AD5D5AA00041D51 /* CoreDataTests */,
 				94D579BC2AD0B76900D4DA02 /* FeedCache */,
 				940E33112ACEEBFC00B15A6E /* Helpers */,
 				9455EB172ACDD46300FCCED1 /* FeedApi */,
@@ -255,10 +249,64 @@
 		94A8FE622AD5C5C200041D51 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				94A8FE5C2AD5C5A500041D51 /* Helpers */,
 				94A8FE632AD5C5DD00041D51 /* CoreDataFeedStore.swift */,
 				94A8FE7F2AD5CA2000041D51 /* FeedStore.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		94A8FE932AD5D5AA00041D51 /* CoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				94A8FE982AD5D5C000041D51 /* CoreDataIntegrationTests */,
+				94A8FE942AD5D5B500041D51 /* CoreDataUnitTests */,
+			);
+			path = CoreDataTests;
+			sourceTree = "<group>";
+		};
+		94A8FE942AD5D5B500041D51 /* CoreDataUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				94A8FE432AD5C38B00041D51 /* FeedStoreChallengeTests.swift */,
+			);
+			path = CoreDataUnitTests;
+			sourceTree = "<group>";
+		};
+		94A8FE982AD5D5C000041D51 /* CoreDataIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				94A8FE422AD5C38B00041D51 /* FeedStoreIntegrationTests.swift */,
+			);
+			path = CoreDataIntegrationTests;
+			sourceTree = "<group>";
+		};
+		94A8FE992AD5D5F700041D51 /* CoreDataTestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				94A8FE722AD5C73100041D51 /* NSEntityDescription+Assertions.swift */,
+				94A8FE682AD5C6A300041D51 /* NSManagedObjectContext+Helpers.swift */,
+				94A8FE542AD5C57000041D51 /* NSManagedObjectContext+Stub.swift */,
+			);
+			path = CoreDataTestHelpers;
+			sourceTree = "<group>";
+		};
+		94A8FE9A2AD5D60800041D51 /* CacheTestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				94BF36542AD176C40075430C /* FeedStoreSpy.swift */,
+				94BF36612AD1EF8D0075430C /* FeedCacheTestHelpers.swift */,
+			);
+			path = CacheTestHelpers;
+			sourceTree = "<group>";
+		};
+		94A8FE9B2AD5D61D00041D51 /* SharedHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				940E33122ACEEC2C00B15A6E /* XCTTestCase+MemoryLeakTrackingHelper.swift */,
+				94BF36662AD1F0E70075430C /* SharedTestHelpers.swift */,
+			);
+			path = SharedHelpers;
 			sourceTree = "<group>";
 		};
 		94BF36342AD150810075430C /* FeedCache */ = {
