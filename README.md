@@ -1,4 +1,4 @@
-```markdown
+
 # Software Architecture, Design, and Testing in Swift
 
 ## Overview
@@ -55,6 +55,4 @@ Explore the following key topics:
 - **End-to-End vs. Unit Tests:** Explore the economics of end-to-end tests vs. unit tests.
 - **CI Pipeline Setup:** Learn to set up a continuous integration (CI) pipeline.
 
-## Conclusion
-This repository offers a wealth of knowledge and practical guidance for Swift developers looking to excel in software architecture, design, and testing. Explore the topics and resources provided to enhance your skills and build robust, maintainable Swift applications.
-```
+
