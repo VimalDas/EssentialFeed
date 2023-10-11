@@ -154,7 +154,7 @@ class FeedStoreChallengeTests: XCTestCase, FailableFeedStoreSpecsCoreData {
 
 		deleteCache(from: sut)
 
-        expect(sut, toRetrieve: .success(.found(feed: feed, timestamp: timestamp)))
+        expect(sut, toRetrieve: .success(CachedFeed(feed: feed, timestamp: timestamp)))
 	}
 
 	func test_delete_removesAllObjects() throws {

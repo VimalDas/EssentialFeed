@@ -43,13 +43,13 @@ extension XCTestCase {
 
 		sut.retrieve { retrievedResult in
 			switch (expectedResult, retrievedResult) {
-            case (.success(.empty), .success(.empty)),
+            case (.success(.none), .success(.none)),
 			     (.failure, .failure):
 				break
 
-            case let (.success(.found(expectedFeed, expectedTimestamp)), .success(.found(retrievedFeed, retrievedTimestamp))):
-				XCTAssertEqual(retrievedFeed, expectedFeed, file: file, line: line)
-				XCTAssertEqual(retrievedTimestamp, expectedTimestamp, file: file, line: line)
+            case let (.success(.some(expectedCache)), .success(.some(retrievedCache))):
+                XCTAssertEqual(retrievedCache.feed, expectedCache.feed, file: file, line: line)
+                XCTAssertEqual(retrievedCache.timestamp, expectedCache.timestamp, file: file, line: line)
 
 			default:
 				XCTFail("Expected to retrieve \(expectedResult), got \(retrievedResult) instead", file: file, line: line)
