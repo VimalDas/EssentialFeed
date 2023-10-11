@@ -44,16 +44,11 @@ public final class CoreDataFeedStore: FeedStore {
 
 	public func retrieve(completion: @escaping RetrievalCompletion) {
 		context.perform { [unowned self] in
-			do {
-				if let cache = try ManagedCache.fetchAllManagedCache(in: context).first {
-                    completion(.success(CachedFeed(feed: cache.localFeed, timestamp: cache.timestamp)))
-
-				} else {
-                    completion(.success(.none))
-				}
-			} catch {
-				completion(.failure(error))
-			}
+            completion(Result {
+                try ManagedCache.fetchManagedCache(in: context).map {
+                    return CachedFeed(feed: $0.localFeed, timestamp: $0.timestamp)
+                }
+            })
 		}
 	}
 
@@ -76,7 +71,7 @@ public final class CoreDataFeedStore: FeedStore {
 	public func deleteCachedFeed(completion: @escaping DeletionCompletion) {
 		context.perform { [unowned self] in
 			do {
-				_ = try ManagedCache.fetchAllManagedCache(in: context).map(context.delete).map(context.save)
+				try ManagedCache.fetchManagedCache(in: context).map(context.delete).map(context.save)
                 completion(.success(()))
 			} catch {
 				context.rollback()
@@ -93,7 +88,7 @@ extension CoreDataFeedStore {
 		@NSManaged var feed: NSOrderedSet
 
 		static func newUniqueInstance(in context: NSManagedObjectContext) throws -> ManagedCache {
-			_ = try fetchAllManagedCache(in: context).map(context.delete)
+			_ = try fetchManagedCache(in: context).map(context.delete)
 			return ManagedCache(context: context)
 		}
 
@@ -101,10 +96,10 @@ extension CoreDataFeedStore {
 			return feed.compactMap { ($0 as? ManagedFeedImage)?.local }
 		}
 
-		static func fetchAllManagedCache(in context: NSManagedObjectContext) throws -> [ManagedCache] {
+		static func fetchManagedCache(in context: NSManagedObjectContext) throws -> ManagedCache? {
 			let request = NSFetchRequest<ManagedCache>(entityName: ManagedCache.entity().name!)
 			request.returnsObjectsAsFaults = false
-			return try context.fetch(request)
+            return try context.fetch(request).first
 		}
 	}
 }
