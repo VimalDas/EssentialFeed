@@ -21,6 +21,9 @@
 		9455EB102ACDCC6300FCCED1 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EB0F2ACDCC6300FCCED1 /* HTTPClient.swift */; };
 		9455EB142ACDCCB600FCCED1 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EB132ACDCCB600FCCED1 /* FeedItemsMapper.swift */; };
 		9455EB1B2ACEC0B900FCCED1 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EB1A2ACEC0B900FCCED1 /* URLSessionHTTPClientTests.swift */; };
+		948C24782AD949DC001FB8DC /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948C246F2AD949DC001FB8DC /* EssentialFeediOS.framework */; };
+		948C247D2AD949DC001FB8DC /* EssentialFeediOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C247C2AD949DC001FB8DC /* EssentialFeediOSTests.swift */; };
+		948C247F2AD949DC001FB8DC /* EssentialFeediOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 948C24712AD949DC001FB8DC /* EssentialFeediOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94A8FE442AD5C38B00041D51 /* FeedStoreIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8FE422AD5C38B00041D51 /* FeedStoreIntegrationTests.swift */; };
 		94A8FE452AD5C38B00041D51 /* FeedStoreChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8FE432AD5C38B00041D51 /* FeedStoreChallengeTests.swift */; };
 		94A8FE4D2AD5C40400041D51 /* XCTestCase+FeedStoreHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8FE4C2AD5C40400041D51 /* XCTestCase+FeedStoreHelpers.swift */; };
@@ -67,6 +70,13 @@
 			remoteGlobalIDString = 9455EADC2ACCC0D500FCCED1;
 			remoteInfo = EssentialFeed;
 		};
+		948C24792AD949DC001FB8DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9455EAD42ACCC0D500FCCED1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 948C246E2AD949DC001FB8DC;
+			remoteInfo = EssentialFeediOS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +97,12 @@
 		9455EB0F2ACDCC6300FCCED1 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		9455EB132ACDCCB600FCCED1 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		9455EB1A2ACEC0B900FCCED1 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		948C246F2AD949DC001FB8DC /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		948C24712AD949DC001FB8DC /* EssentialFeediOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeediOS.h; sourceTree = "<group>"; };
+		948C24722AD949DC001FB8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948C24772AD949DC001FB8DC /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		948C247C2AD949DC001FB8DC /* EssentialFeediOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeediOSTests.swift; sourceTree = "<group>"; };
+		948C247E2AD949DC001FB8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94A8FE422AD5C38B00041D51 /* FeedStoreIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedStoreIntegrationTests.swift; sourceTree = "<group>"; };
 		94A8FE432AD5C38B00041D51 /* FeedStoreChallengeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedStoreChallengeTests.swift; sourceTree = "<group>"; };
 		94A8FE4C2AD5C40400041D51 /* XCTestCase+FeedStoreHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedStoreHelpers.swift"; sourceTree = "<group>"; };
@@ -141,6 +157,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		948C246C2AD949DC001FB8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948C24742AD949DC001FB8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948C24782AD949DC001FB8DC /* EssentialFeediOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -169,6 +200,8 @@
 				9455EADF2ACCC0D500FCCED1 /* EssentialFeed */,
 				9455EAEA2ACCC0D900FCCED1 /* EssentialFeedTests */,
 				940E33212ACF052800B15A6E /* EssentialFeedApiEndToEndTests */,
+				948C24702AD949DC001FB8DC /* EssentialFeediOS */,
+				948C247B2AD949DC001FB8DC /* EssentialFeediOSTests */,
 				9455EADE2ACCC0D500FCCED1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -179,6 +212,8 @@
 				9455EADD2ACCC0D500FCCED1 /* EssentialFeed.framework */,
 				9455EAE62ACCC0D900FCCED1 /* EssentialFeedTests.xctest */,
 				940E33202ACF052800B15A6E /* EssentialFeedApiEndToEndTests.xctest */,
+				948C246F2AD949DC001FB8DC /* EssentialFeediOS.framework */,
+				948C24772AD949DC001FB8DC /* EssentialFeediOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +271,24 @@
 				9455EAEB2ACCC0D900FCCED1 /* LoadFeedFromRemoteUseCaseTests.swift */,
 			);
 			path = FeedApi;
+			sourceTree = "<group>";
+		};
+		948C24702AD949DC001FB8DC /* EssentialFeediOS */ = {
+			isa = PBXGroup;
+			children = (
+				948C24712AD949DC001FB8DC /* EssentialFeediOS.h */,
+				948C24722AD949DC001FB8DC /* Info.plist */,
+			);
+			path = EssentialFeediOS;
+			sourceTree = "<group>";
+		};
+		948C247B2AD949DC001FB8DC /* EssentialFeediOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				948C247C2AD949DC001FB8DC /* EssentialFeediOSTests.swift */,
+				948C247E2AD949DC001FB8DC /* Info.plist */,
+			);
+			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
 		94A8FE5C2AD5C5A500041D51 /* Helpers */ = {
@@ -358,6 +411,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		948C246A2AD949DC001FB8DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948C247F2AD949DC001FB8DC /* EssentialFeediOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -415,6 +476,42 @@
 			productReference = 9455EAE62ACCC0D900FCCED1 /* EssentialFeedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		948C246E2AD949DC001FB8DC /* EssentialFeediOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948C24802AD949DC001FB8DC /* Build configuration list for PBXNativeTarget "EssentialFeediOS" */;
+			buildPhases = (
+				948C246A2AD949DC001FB8DC /* Headers */,
+				948C246B2AD949DC001FB8DC /* Sources */,
+				948C246C2AD949DC001FB8DC /* Frameworks */,
+				948C246D2AD949DC001FB8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EssentialFeediOS;
+			productName = EssentialFeediOS;
+			productReference = 948C246F2AD949DC001FB8DC /* EssentialFeediOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		948C24762AD949DC001FB8DC /* EssentialFeediOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948C24832AD949DC001FB8DC /* Build configuration list for PBXNativeTarget "EssentialFeediOSTests" */;
+			buildPhases = (
+				948C24732AD949DC001FB8DC /* Sources */,
+				948C24742AD949DC001FB8DC /* Frameworks */,
+				948C24752AD949DC001FB8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				948C247A2AD949DC001FB8DC /* PBXTargetDependency */,
+			);
+			name = EssentialFeediOSTests;
+			productName = EssentialFeediOSTests;
+			productReference = 948C24772AD949DC001FB8DC /* EssentialFeediOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -432,6 +529,12 @@
 						LastSwiftMigration = 1240;
 					};
 					9455EAE52ACCC0D900FCCED1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					948C246E2AD949DC001FB8DC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					948C24762AD949DC001FB8DC = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -452,6 +555,8 @@
 				9455EADC2ACCC0D500FCCED1 /* EssentialFeed */,
 				9455EAE52ACCC0D900FCCED1 /* EssentialFeedTests */,
 				940E331F2ACF052800B15A6E /* EssentialFeedApiEndToEndTests */,
+				948C246E2AD949DC001FB8DC /* EssentialFeediOS */,
+				948C24762AD949DC001FB8DC /* EssentialFeediOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -472,6 +577,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9455EAE42ACCC0D900FCCED1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948C246D2AD949DC001FB8DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948C24752AD949DC001FB8DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -542,6 +661,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		948C246B2AD949DC001FB8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948C24732AD949DC001FB8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948C247D2AD949DC001FB8DC /* EssentialFeediOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -554,6 +688,11 @@
 			isa = PBXTargetDependency;
 			target = 9455EADC2ACCC0D500FCCED1 /* EssentialFeed */;
 			targetProxy = 9455EAE82ACCC0D900FCCED1 /* PBXContainerItemProxy */;
+		};
+		948C247A2AD949DC001FB8DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 948C246E2AD949DC001FB8DC /* EssentialFeediOS */;
+			targetProxy = 948C24792AD949DC001FB8DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -810,6 +949,100 @@
 			};
 			name = Release;
 		};
+		948C24812AD949DC001FB8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9E26H623J7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EssentialFeediOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimal.EssentialFeediOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		948C24822AD949DC001FB8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9E26H623J7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EssentialFeediOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimal.EssentialFeediOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		948C24842AD949DC001FB8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9E26H623J7;
+				INFOPLIST_FILE = EssentialFeediOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimal.EssentialFeediOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		948C24852AD949DC001FB8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9E26H623J7;
+				INFOPLIST_FILE = EssentialFeediOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vimal.EssentialFeediOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -845,6 +1078,24 @@
 			buildConfigurations = (
 				9455EAF52ACCC0D900FCCED1 /* Debug */,
 				9455EAF62ACCC0D900FCCED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948C24802AD949DC001FB8DC /* Build configuration list for PBXNativeTarget "EssentialFeediOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948C24812AD949DC001FB8DC /* Debug */,
+				948C24822AD949DC001FB8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948C24832AD949DC001FB8DC /* Build configuration list for PBXNativeTarget "EssentialFeediOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948C24842AD949DC001FB8DC /* Debug */,
+				948C24852AD949DC001FB8DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
