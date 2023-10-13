@@ -13,6 +13,8 @@
 		948F498F2AD8603F00CC7C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948F498E2AD8603F00CC7C88 /* Assets.xcassets */; };
 		948F49922AD8603F00CC7C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948F49902AD8603F00CC7C88 /* LaunchScreen.storyboard */; };
 		948F499D2AD896E200CC7C88 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F499C2AD896E200CC7C88 /* FeedViewController.swift */; };
+		948F49A02AD89B9300CC7C88 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F499F2AD89B9300CC7C88 /* FeedImageCell.swift */; };
+		948F49A32AD89BDB00CC7C88 /* FeedImageViewModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F49A22AD89BDB00CC7C88 /* FeedImageViewModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		948F49912AD8603F00CC7C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		948F49932AD8603F00CC7C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		948F499C2AD896E200CC7C88 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		948F499F2AD89B9300CC7C88 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
+		948F49A22AD89BDB00CC7C88 /* FeedImageViewModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageViewModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				948F49852AD8602500CC7C88 /* AppDelegate.swift */,
 				948F49872AD8602500CC7C88 /* SceneDelegate.swift */,
 				948F499C2AD896E200CC7C88 /* FeedViewController.swift */,
+				948F49A22AD89BDB00CC7C88 /* FeedImageViewModelData.swift */,
+				948F499F2AD89B9300CC7C88 /* FeedImageCell.swift */,
 				948F498B2AD8602500CC7C88 /* Main.storyboard */,
 				948F498E2AD8603F00CC7C88 /* Assets.xcassets */,
 				948F49902AD8603F00CC7C88 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				948F49862AD8602500CC7C88 /* AppDelegate.swift in Sources */,
+				948F49A02AD89B9300CC7C88 /* FeedImageCell.swift in Sources */,
 				948F499D2AD896E200CC7C88 /* FeedViewController.swift in Sources */,
 				948F49882AD8602500CC7C88 /* SceneDelegate.swift in Sources */,
+				948F49A32AD89BDB00CC7C88 /* FeedImageViewModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

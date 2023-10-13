@@ -24,7 +24,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="540" id="V1P-2v-wbY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="540" id="V1P-2v-wbY" customClass="FeedImageCell" customModule="Prototype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="540"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V1P-2v-wbY" id="E5J-pJ-bhS">
@@ -104,6 +104,12 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="Iht-mK-r4G" secondAttribute="bottom" priority="999" id="q36-qK-Lvs"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="dnR-O5-F19" id="dRR-g4-6hD"/>
+                                    <outlet property="feedImageView" destination="BFp-Zf-Rz6" id="Yar-eY-C2N"/>
+                                    <outlet property="locationContainer" destination="iQs-7N-rO6" id="BAp-Su-hL5"/>
+                                    <outlet property="locationLabel" destination="E0a-m9-dIx" id="7TE-yt-RTt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
