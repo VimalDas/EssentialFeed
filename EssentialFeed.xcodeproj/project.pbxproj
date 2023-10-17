@@ -23,6 +23,10 @@
 		9455EB1B2ACEC0B900FCCED1 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455EB1A2ACEC0B900FCCED1 /* URLSessionHTTPClientTests.swift */; };
 		94613C362ADEF7FC0017A633 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94613C352ADEF7FB0017A633 /* FeedImageCell.swift */; };
 		94613C3C2ADEF8CC0017A633 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94613C3B2ADEF8CC0017A633 /* UIView+Shimmering.swift */; };
+		94613C462ADEFB0A0017A633 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94613C452ADEFB0A0017A633 /* FeedImageDataLoader.swift */; };
+		94613C512ADEFBC50017A633 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94613C502ADEFBC50017A633 /* FeedUIComposer.swift */; };
+		94613C572ADEFBF30017A633 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94613C562ADEFBF30017A633 /* FeedImageCellController.swift */; };
+		94613C5D2ADEFC1E0017A633 /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94613C5C2ADEFC1E0017A633 /* FeedRefreshViewController.swift */; };
 		948C24782AD949DC001FB8DC /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948C246F2AD949DC001FB8DC /* EssentialFeediOS.framework */; };
 		948C248C2AD97299001FB8DC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C248B2AD97299001FB8DC /* FeedViewController.swift */; };
 		948C24932AD972DE001FB8DC /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C24922AD972DE001FB8DC /* FeedViewControllerTests.swift */; };
@@ -124,6 +128,10 @@
 		9455EB1A2ACEC0B900FCCED1 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		94613C352ADEF7FB0017A633 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		94613C3B2ADEF8CC0017A633 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
+		94613C452ADEFB0A0017A633 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
+		94613C502ADEFBC50017A633 /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
+		94613C562ADEFBF30017A633 /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
+		94613C5C2ADEFC1E0017A633 /* FeedRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRefreshViewController.swift; sourceTree = "<group>"; };
 		948C246F2AD949DC001FB8DC /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		948C24722AD949DC001FB8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		948C24772AD949DC001FB8DC /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,13 +310,57 @@
 			path = FeedApi;
 			sourceTree = "<group>";
 		};
+		94613C4B2ADEFB2B0017A633 /* FeedImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				94613C452ADEFB0A0017A633 /* FeedImageDataLoader.swift */,
+			);
+			path = FeedImageLoader;
+			sourceTree = "<group>";
+		};
+		94613C4C2ADEFB540017A633 /* FeedUI */ = {
+			isa = PBXGroup;
+			children = (
+				94613C4F2ADEFB790017A633 /* Composers */,
+				94613C4E2ADEFB6E0017A633 /* Controllers */,
+				94613C4D2ADEFB670017A633 /* Views */,
+			);
+			path = FeedUI;
+			sourceTree = "<group>";
+		};
+		94613C4D2ADEFB670017A633 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94613C352ADEF7FB0017A633 /* FeedImageCell.swift */,
+				94613C3B2ADEF8CC0017A633 /* UIView+Shimmering.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94613C4E2ADEFB6E0017A633 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94613C562ADEFBF30017A633 /* FeedImageCellController.swift */,
+				948C248B2AD97299001FB8DC /* FeedViewController.swift */,
+				94613C5C2ADEFC1E0017A633 /* FeedRefreshViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		94613C4F2ADEFB790017A633 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				94613C502ADEFBC50017A633 /* FeedUIComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
 		948C24702AD949DC001FB8DC /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
-				948C248B2AD97299001FB8DC /* FeedViewController.swift */,
-				94613C352ADEF7FB0017A633 /* FeedImageCell.swift */,
-				94613C3B2ADEF8CC0017A633 /* UIView+Shimmering.swift */,
+				94613C4C2ADEFB540017A633 /* FeedUI */,
 				948C24722AD949DC001FB8DC /* Info.plist */,
+				94613C4B2ADEFB2B0017A633 /* FeedImageLoader */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -705,9 +757,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94613C462ADEFB0A0017A633 /* FeedImageDataLoader.swift in Sources */,
+				94613C5D2ADEFC1E0017A633 /* FeedRefreshViewController.swift in Sources */,
 				94613C3C2ADEF8CC0017A633 /* UIView+Shimmering.swift in Sources */,
 				948C248C2AD97299001FB8DC /* FeedViewController.swift in Sources */,
 				94613C362ADEF7FC0017A633 /* FeedImageCell.swift in Sources */,
+				94613C512ADEFBC50017A633 /* FeedUIComposer.swift in Sources */,
+				94613C572ADEFBF30017A633 /* FeedImageCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
